@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  color: #04172a;
 }
 
 .Main {
@@ -12,6 +13,7 @@
   display: flex;
   flex-direction: column;
   padding: 45px 30px;
+  margin: 0 auto;
 }
 
 .btn-one{
@@ -49,21 +51,29 @@
   width: 45%;
 }
 
+.paypal:hover{
+  cursor:pointer;
+}
+
 .bank{
   margin-left: 15px;
-  background-color: black;
+  background-color: #04172a;
   padding: 10px 0px;
   color: white;
   border-radius: 8px;
-  border: 1px solid black;
+  border: 1px solid #04172a;
   font-weight: bold;
   width: 45%;
+}
+
+.bank:hover{
+  cursor: pointer;
 }
 
 .rad{
   width: 15px;
   height: 15px;
-  border: 3px solid #DC4E4C;
+  border: 3px solid #D2120f;
   border-radius: 50%;
 }
 .ras{
@@ -112,11 +122,15 @@ input:focus{
 .apply {
   padding: 0px 10px;
   height: 35px;
-  background-color: #DC4E4C;
-  border: 1px solid #DC4E4C;
+  background-color: #D2120f;
+  border: 1px solid #D2120f;
   color: white;
   font-weight: bold;
   border-radius: 0px 7px 7px 0px;
+}
+
+.apply:hover {
+  cursor: pointer;
 }
 
 .subscribe {
@@ -128,6 +142,11 @@ input:focus{
   border-radius: 7px;
   border: 1px solid #F4C6C5;
   width: 100%;
+}
+
+.subscribe:hover{
+  cursor: pointer;
+  background-color: #D2120f;
 }
 
 .footer{
@@ -143,13 +162,13 @@ input:focus{
 
 @media only screen and (min-width: 1024px) {
   .Main{
-    width: 65vw;
+    width: 50vw;
   }
 
   .btn-one{
     margin-top: 20px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
   }
 
   .bord{
@@ -160,39 +179,39 @@ input:focus{
   }
 
   .bill-one {
-    width: 60%;
+    width: 35%;
     height: 100px;
   }
 
   .bill-two {
     margin-top: 0px;
-    width: 60%;
+    width: 35%;
     height: 100px;
     margin-left: 25px;
   }
 
   .paypal {
-    width: 25%;
+    width: 35%;
   }
 
   .bank {
-    width: 25%;
+    width: 35%;
   }
 
   .all .number{
-    width: 57.5vw;
+    width:100%;
   }
 
   .all .expire{
-    width: 36vw;
+    width: 23vw;
   }
 
   .all .cvv {
-    width: 20vw;
+    width: 18vw;
   }
 
   .subscribe{
-    width: 13%;
+    width: 20%;
   }
 
   .footer{
@@ -202,6 +221,6 @@ input:focus{
 
   .foot{
     margin-left: 18px;
-    width: 39vw;
+    width: 23vw;
   }
 }
